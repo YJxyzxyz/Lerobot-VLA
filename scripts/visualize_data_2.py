@@ -7,6 +7,13 @@ Features:
 3. Overlay dataset images for comparison and verification
 4. (Optional) Upload dataset to Hugging Face Hub
 """
+import sys
+import os
+
+# Add project root to Python path
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
 
 import numpy as np
 import torch
