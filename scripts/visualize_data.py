@@ -12,6 +12,13 @@ Usage:
     python visualize_data.py --episode 2
     python visualize_data.py --root ./demo_data_example
 """
+import sys
+import os
+
+# Add project root to Python path
+project_root = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+if project_root not in sys.path:
+    sys.path.insert(0, project_root)
 
 import argparse
 import numpy as np
