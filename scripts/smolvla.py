@@ -266,7 +266,7 @@ def run_deployment(
 
             # Execute action
             env.step(action)
-            env.render()
+            env.render(idx=episode)
 
             step += 1
 
