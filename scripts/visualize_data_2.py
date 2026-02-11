@@ -26,11 +26,12 @@ from mujoco_env.y_env2 import SimpleEnv2
 # Configuration Parameters
 # ========================
 ROOT = "./demo_data_language"
+# ROOT = "./demo_data_language_random"
 # ROOT = './omy_pnp_language'  # If using provided example data
 
 REPO_NAME = 'omy_pnp_language'
 XML_PATH = './asset/example_scene_y2.xml'
-EPISODE_INDEX = 0
+EPISODE_INDEX = 0  # Index of episode to visualize
 
 
 class EpisodeSampler(torch.utils.data.Sampler):
